@@ -10,6 +10,11 @@ Testado em uma **Topdata FIT com firmware 6.12**. Outros modelos e firmwares pod
 se comportar diferente; os pontos que dependem do equipamento estão marcados na
 [referência do protocolo](docs/PROTOCOLO.md).
 
+Vai ligar **leitor externo com saída Wiegand** (facial, biométrico, QR) e precisa
+de entrada e saída separadas? Isso não passa por esta biblioteca — é fiação e
+configuração do equipamento, e está em
+[docs/LEITORES-WIEGAND.md](docs/LEITORES-WIEGAND.md).
+
 ## O que dá para fazer
 
 - login (cifra da própria interface) e renovação automática da sessão;
@@ -98,6 +103,10 @@ Cada uma custou horas na bancada. Detalhes em [docs/PROTOCOLO.md](docs/PROTOCOLO
 
 Visor dizendo **"Passe o cartão novamente"** / **"cartão falhou"**? Veja a seção de
 diagnóstico na referência.
+
+Uma leitura só acendendo **as duas setas** e soltando a roleta nos dois sentidos? É
+o Acionamento 2, que não controla sentido — veja
+[docs/LEITORES-WIEGAND.md](docs/LEITORES-WIEGAND.md).
 
 ## Segurança
 
